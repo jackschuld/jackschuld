@@ -34,4 +34,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist  # This is where Vite places the built files
-          token: ${{ secrets.GITHUB_TOKEN }}  # GitHub automatically generates this
+          token: ${{ secrets.GH_TOKEN }}
