@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main 
+    paths:
+      - '**/*'
 
 jobs:
   deploy:
@@ -33,5 +35,5 @@ jobs:
         uses: jamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist  # This is where Vite places the built files
+          folder: dist
           token: ${{ secrets.GH_TOKEN }}
