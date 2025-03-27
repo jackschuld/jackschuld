@@ -1,0 +1,3 @@
+name = "jackschuld" # Or whatever you want your app to be named.
+compatibility_date = "2025-03-27" # Use the date from the error message.
+assets = { directory = "./build" }
