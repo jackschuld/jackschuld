@@ -3,37 +3,29 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
-    paths:
-      - '**/*'
+      - main  # or 'master' depending on your default branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Check out the code
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      # Set up Node.js environment
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '22' 
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # You can adjust the version if needed
 
-      # Install dependencies
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      # Build the app
-      - name: Build the app
-        run: npm run build
+    - name: Build the project
+      run: npm run build  # Make sure this is your build command (e.g., `yarn build`)
 
-      # Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: jamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: build  # Adjusted folder from dist to build
-          token: ${{ secrets.GH_TOKEN }}
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build  # This should be the output folder of your build (check the `npm run build` output)
