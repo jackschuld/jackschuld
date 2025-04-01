@@ -2,13 +2,13 @@ import Project from './Project';
 
 const Projects = () => {
   const onlineRecordsProject = {
-    title: "Online Records (Capstone)",
+    title: "Virtual Vinyl (Capstone)",
     description: "A full-stack web application that allows users to manage their record collection digitally including album collection management, wishlist functionality, interactive music playback, and album reviews!",
     images: [
       { 
         src: '/record-store/homepage.png', 
-        alt: 'Online Records Homepage',
-        description: 'Welcome to Online Records - Your digital record collection manager'
+        alt: 'Homepage',
+        description: 'Welcome to Virtual Vinyl - Your digital record collection manager'
       },
       { 
         src: '/record-store/2010s-search.png', 
