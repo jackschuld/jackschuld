@@ -62,7 +62,7 @@ const About = () => {
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Professional Summary</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  As a <span className="font-bold text-gray-900">Full Stack Software Developer</span>, I specialize in helping <span className="font-bold text-gray-900">small businesses thrive online</span>. I create <span className="font-bold text-gray-900">engaging customer-facing websites</span> and <span className="font-bold text-gray-900">intuitive internal tools</span> that transform complex data into user-friendly solutions. Using modern technologies like Laravel, Angular, and React, I deliver applications that are both <span className="font-bold text-gray-900">powerful and easy to use</span>.
+                  As a <span className="font-bold text-gray-900">Full Stack Software Developer</span>, I specialize in helping <span className="font-bold text-gray-900">small businesses thrive online</span>. I create <span className="font-bold text-gray-900">engaging customer-facing websites</span> and <span className="font-bold text-gray-900">intuitive internal tools</span> that transform <span className="font-bold text-gray-900">complex data into user-friendly solutions</span>. Using modern technologies like Laravel, Angular, and React, I deliver applications that are both <span className="font-bold text-gray-900">powerful</span> and <span className="font-bold text-gray-900">easy to use</span>.
                 </p>
               </div>
 

@@ -10,8 +10,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-lg shadow-md z-50 flex justify-between items-center px-8 py-4">
       <h1 
         onClick={scrollToTop}
-        className="text-2xl font-bold text-gray-900 cursor-pointer hover:text-black transition-colors"
+        className="text-2xl font-bold text-gray-900 cursor-pointer hover:text-black transition-colors flex items-center gap-2"
       >
+        <img src="/parson-icon.png" alt="Logo" width={32} height={32} />
         Jack Schuld
       </h1>
       <div className="space-x-6">
