@@ -65,7 +65,7 @@ const Projects = () => {
     description: "A full-stack application built with React and .NET that integrates with OpenAI's API to provide AI services. Features a C# backend with MySQL database for robust data management and API handling.",
     images: [
       { 
-        src: '/ai-marketplace/placeholder.png',  // You'll need to add actual images
+        src: '/aimarketplace/chat.png', 
         alt: 'AI Marketplace Homepage',
         description: 'AI Marketplace - Access powerful AI tools and services'
       }
