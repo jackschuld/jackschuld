@@ -60,7 +60,41 @@ const Projects = () => {
     ]
   };
 
-  const projects = [onlineRecordsProject];
+  const aiMarketplaceProject = {
+    title: "AI Marketplace",
+    description: "A full-stack application built with React and .NET that integrates with OpenAI's API to provide AI services. Features a C# backend with MySQL database for robust data management and API handling.",
+    images: [
+      { 
+        src: '/ai-marketplace/placeholder.png',  // You'll need to add actual images
+        alt: 'AI Marketplace Homepage',
+        description: 'AI Marketplace - Access powerful AI tools and services'
+      }
+    ],
+    features: [
+      'React frontend with modern UI/UX',
+      '.NET C# backend architecture',
+      'MySQL database integration',
+      'OpenAI API integration',
+      'Secure user authentication',
+      'RESTful API design'
+    ],
+    repositoryLinks: [
+      {
+        text: 'Live Demo',
+        url: 'https://marketplace.jackschuld.com'
+      },
+      {
+        text: 'Frontend Code',
+        url: 'https://github.com/jackschuld/aimarketplace-ui'
+      },
+      {
+        text: 'Backend Code',
+        url: 'https://github.com/jackschuld/aimarketplace-api'
+      }
+    ]
+  };
+
+  const projects = [aiMarketplaceProject, onlineRecordsProject];
 
   return (
     <section id="projects" className="py-20 bg-white px-6">
