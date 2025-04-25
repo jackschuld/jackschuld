@@ -94,7 +94,47 @@ const Projects = () => {
     ]
   };
 
-  const projects = [aiMarketplaceProject, onlineRecordsProject];
+  const salesSiteProject = {
+    title: "Sales Portfolio",
+    description: "A React-based website designed to showcase my web development skills and services to potential clients. Features responsive design, portfolio showcase, and email contact integration.",
+    images: [
+      { 
+        src: '/sales/hero.png', 
+        alt: 'Sales Site Hero',
+        description: 'Professional web development services showcase'
+      },
+      { 
+        src: '/sales/phone.png', 
+        alt: 'Mobile View',
+        description: 'Fully responsive design for all devices'
+      },
+      { 
+        src: '/sales/lets_connect.png', 
+        alt: 'Contact Section',
+        description: 'Direct client communication through integrated contact form'
+      }
+    ],
+    features: [
+      'React frontend with modern UI components',
+      'Responsive design for all devices',
+      'EmailJS integration for contact form',
+      'Portfolio showcase',
+      'Service offerings display',
+      'Client testimonials section'
+    ],
+    repositoryLinks: [
+      {
+        text: 'Live Demo',
+        url: 'https://website.jackschuld.com'
+      },
+      {
+        text: 'Frontend Code',
+        url: 'https://github.com/jackschuld/sales'
+      }
+    ]
+  };
+
+  const projects = [salesSiteProject, aiMarketplaceProject, onlineRecordsProject];
 
   return (
     <section id="projects" className="py-20 bg-white px-6">
