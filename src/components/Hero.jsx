@@ -8,6 +8,7 @@ const Hero = () => {
         backgroundImage: 'url("/hero-3.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        height: '100vh'
       }}
     >
       {/* Gradient overlay */}
