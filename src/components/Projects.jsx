@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Project from './Project';
 
 const Projects = () => {
@@ -68,6 +69,16 @@ const Projects = () => {
         src: '/aimarketplace/chat.png', 
         alt: 'AI Marketplace Homepage',
         description: 'AI Marketplace - Access powerful AI tools and services'
+      },
+      { 
+        src: '/aimarketplace/levels.png', 
+        alt: 'AI Marketplace Homepage',
+        description: 'AI Marketplace - Access powerful AI tools and services'
+      },
+      { 
+        src: '/aimarketplace/login.png', 
+        alt: 'AI Marketplace Homepage',
+        description: 'AI Marketplace - Access powerful AI tools and services'
       }
     ],
     features: [
@@ -96,7 +107,7 @@ const Projects = () => {
 
   const salesSiteProject = {
     title: "Sales Portfolio",
-    description: "A React-based website designed to showcase my web development skills and services to potential clients. Features responsive design, portfolio showcase, and email contact integration.",
+    description: "A React-based website designed to showcase my web development skills and services to potential clients. Features responsive design, dark mode integration, and email contact integration.",
     images: [
       { 
         src: '/sales/hero.png', 
@@ -137,13 +148,46 @@ const Projects = () => {
   const projects = [salesSiteProject, aiMarketplaceProject, onlineRecordsProject];
 
   return (
-    <section id="projects" className="py-20 bg-white px-6">
-      <div className="max-w-6xl mx-auto">
-      <h2 className="text-4xl font-semibold text-gray-900 mb-12">Featured Projects</h2>
+    <section id="projects" className="py-24 bg-white px-6 relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-creative-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4"></div>
+      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-creative-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"></div>
       
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+      <div className="max-w-6xl mx-auto relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <motion.span 
+            className="inline-block text-creative-accent text-sm uppercase tracking-[0.2em] font-medium mb-3"
+            initial={{ y: 10, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            My Work
+          </motion.span>
+          <h2 className="text-5xl font-serif font-bold text-creative-primary mb-2">Featured Projects</h2>
+          <div className="h-1 w-20 bg-creative-accent mb-6"></div>
+          <p className="text-creative-primary/80 max-w-xl text-lg">
+            Explore my latest work showcasing a blend of creative design and technical expertise.
+          </p>
+        </motion.div>
+      
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
-            <Project key={index} {...project} />
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Project {...project} />
+            </motion.div>
           ))}
         </div>
       </div>

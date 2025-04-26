@@ -9,11 +9,15 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: theme('colors.creative.light');
+  color: theme('colors.creative.dark');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
 }
 
 code {
@@ -23,4 +27,23 @@ code {
 
 .image-description {
   padding-bottom: 3vh;
+}
+
+/* Creative underlining effect for links */
+.creative-link {
+  @apply relative inline-block;
+}
+
+.creative-link::after {
+  content: '';
+  @apply absolute left-0 bottom-0 w-0 h-0.5 bg-creative-accent transition-all duration-300 ease-in-out;
+}
+
+.creative-link:hover::after {
+  @apply w-full;
+}
+
+/* Smooth scroll helper for section IDs */
+section {
+  scroll-margin-top: 80px; /* Adjust based on navbar height */
 }
