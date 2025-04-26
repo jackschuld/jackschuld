@@ -6,10 +6,5 @@ assets = { directory = "./build" }
 command = "CI=false npm install && CI=false npm run build"
 publish = "build"
 
-# SPA routing redirects
-[[routes]]
-pattern = "/*"
-fallback = "index.html"
-
 [env.production]
 vars = { CI = "false", REACT_APP_EMAILJS_SERVICE_ID = "service_ufiqt7e", REACT_APP_EMAILJS_TEMPLATE_ID = "template_qops3ur", REACT_APP_EMAILJS_PUBLIC_KEY = "q_rkQl5tLNjzeIevE" }
