@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="md:col-span-5 space-y-4">
             <h3 className="font-serif italic text-2xl flex items-center">
               <span className="font-normal text-white">Jack</span>
-              <span className="font-bold text-creative-accent ml-1">Schuld</span>
+              <span className="font-bold text-white ml-1">Schuld</span>
             </h3>
             <p className="text-creative-light/70 max-w-sm">
               Building engaging digital experiences that combine creativity with technical precision.
