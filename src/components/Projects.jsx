@@ -145,7 +145,52 @@ const Projects = () => {
     ]
   };
 
-  const projects = [salesSiteProject, aiMarketplaceProject, onlineRecordsProject];
+  const spacePiratesProject = {
+    title: "Space Pirates (Game)",
+    description: "A desktop game where you battle pirates in space! Download and play on Windows.",
+    images: [
+      { 
+        src: '/spacepirates/launch.png',
+        alt: 'Space Pirates Start Screen',
+        description: 'Screenshot of the start screen'
+      },
+      { 
+        src: '/spacepirates/start.png',
+        alt: 'Space Pirates Galaxy Screen',
+        description: 'Screenshot of the galaxy screen'
+      },
+      { 
+        src: '/spacepirates/explore.png',
+        alt: 'Space Pirates Solar System Details',
+        description: 'Screenshot of the solar system details'
+      },
+      { 
+        src: '/spacepirates/solarsystem.png',
+        alt: 'Space Pirates Solar System Screen',
+        description: 'Screenshot of the solar system screen'
+      }
+    ],
+    features: [
+      'Random map generation',
+      'Inventory system',
+      'Exploration features',
+      'Upgrades',
+      'Save and load system'
+    ],
+    repositoryLinks: [
+      {
+        text: 'Download Game (ZIP)',
+        url: '/spacepirates/SpacePirates.zip'
+      }
+    ],
+    instructions: [
+      "Download and unzip the file.",
+      "Double-click the launch file to start the game.",
+      "Requires .NET runtime."
+    ]
+  };
+
+  const projects = [spacePiratesProject, salesSiteProject, aiMarketplaceProject, onlineRecordsProject];
 
   return (
     <section id="projects" className="py-24 bg-white px-6 relative overflow-hidden">
