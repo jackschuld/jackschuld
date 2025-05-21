@@ -180,7 +180,7 @@ const Projects = () => {
     repositoryLinks: [
       {
         text: 'Download Game (ZIP)',
-        url: '/spacepirates/SpacePirates.zip'
+        url: 'https://drive.google.com/uc?export=download&id=1tvwMxThd1F-d2-xKNtg3DCvEjg6-1Mbo'
       }
     ],
     instructions: [
