@@ -55,7 +55,7 @@ const About = () => {
           </div>
           
           <div className="grid md:grid-cols-[2fr,3fr] gap-12 items-start">
-            {/* Left Column - Photo and Education */}
+            {/* Left Column - Photo and Professional Summary */}
             <div className="space-y-8">
               <motion.div 
                 className="aspect-square w-full max-w-md mx-auto overflow-hidden shadow-xl relative group"
@@ -72,7 +72,27 @@ const About = () => {
                   />
                 </div>
               </motion.div>
-              
+
+              {/* Professional Summary moved here */}
+              <motion.div 
+                className="bg-white p-8 rounded-sm shadow-xl relative overflow-hidden"
+                whileInView={{ y: [10, 0], opacity: [0, 1] }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <div className="absolute top-0 left-0 h-full w-2 bg-creative-accent"></div>
+                <h3 className="text-2xl font-serif font-bold text-creative-primary mb-5">Professional Summary</h3>
+                <p className="text-creative-primary/90 leading-relaxed text-lg">
+                  As a <span className="font-bold text-creative-primary">Full Stack Developer & Digital Marketer</span>, I specialize in helping <span className="font-bold text-creative-primary">small businesses thrive online</span>. I create <span className="font-bold text-creative-primary">engaging customer-facing websites</span> and <span className="font-bold text-creative-primary">intuitive internal tools</span> that transform <span className="font-bold text-creative-primary">complex data into user-friendly solutions</span>. Using modern technologies like Laravel, Angular, and React, I deliver applications that are both <span className="font-bold text-creative-primary">powerful</span> and <span className="font-bold text-creative-primary">easy to use</span>.
+                </p>
+              </motion.div>
+
+              {/* Education removed from here */}
+            </div>
+
+            {/* Right Column - Education, Technical Expertise, and Buttons */}
+            <div className="space-y-10">
+              {/* Education moved here */}
               <motion.div 
                 className="bg-white p-8 rounded-sm shadow-xl border-b-4 border-creative-accent relative overflow-hidden"
                 whileInView={{ x: [-10, 0], opacity: [0, 1] }}
@@ -93,22 +113,6 @@ const About = () => {
                     <p className="text-creative-muted/70 text-sm mt-1">December 2022 - March 2023</p>
                   </div>
                 </div>
-              </motion.div>
-            </div>
-
-            {/* Right Column - Professional Summary and Skills */}
-            <div className="space-y-10">
-              <motion.div 
-                className="bg-white p-8 rounded-sm shadow-xl relative overflow-hidden"
-                whileInView={{ y: [10, 0], opacity: [0, 1] }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                <div className="absolute top-0 left-0 h-full w-2 bg-creative-accent"></div>
-                <h3 className="text-2xl font-serif font-bold text-creative-primary mb-5">Professional Summary</h3>
-                <p className="text-creative-primary/90 leading-relaxed text-lg">
-                  As a <span className="font-bold text-creative-primary">Full Stack Developer & Digital Marketer</span>, I specialize in helping <span className="font-bold text-creative-primary">small businesses thrive online</span>. I create <span className="font-bold text-creative-primary">engaging customer-facing websites</span> and <span className="font-bold text-creative-primary">intuitive internal tools</span> that transform <span className="font-bold text-creative-primary">complex data into user-friendly solutions</span>. Using modern technologies like Laravel, Angular, and React, I deliver applications that are both <span className="font-bold text-creative-primary">powerful</span> and <span className="font-bold text-creative-primary">easy to use</span>.
-                </p>
               </motion.div>
 
               <motion.div 
