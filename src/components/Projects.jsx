@@ -2,6 +2,38 @@ import { motion } from 'framer-motion';
 import Project from './Project';
 
 const Projects = () => {
+  const checkboxesProject = {
+    title: "Checkboxes Game (Inspired by One Million Checkboxes)",
+    description:
+      "A real-time collaborative web game inspired by onemillioncheckboxes.com. Players can check or uncheck boxes on a massive grid, with changes instantly reflected for all connected users. Built with web sockets and advanced rendering strategies for seamless, live updates across many clients. Every 4 hours, a countdown triggers a global mystery event!",
+    images: [
+      {
+        src: '/checkboxes/full-view.png',
+        alt: 'Full Grid View',
+        description: 'A massive grid of checkboxes, collaboratively updated in real time.'
+      },
+      {
+        src: '/checkboxes/timer.png',
+        alt: 'Countdown Timer',
+        description: 'A countdown timer that triggers a global mystery every 4 hours.'
+      },
+    ],
+    features: [
+      'Massive collaborative checkbox grid',
+      'Real-time updates via web sockets',
+      'Efficient rendering for instant feedback',
+      'Global countdown triggering mystery events',
+      'Inspired by onemillioncheckboxes.com',
+      'Fun, addictive, and social gameplay'
+    ],
+    repositoryLinks: [
+      {
+        text: 'Live Demo',
+        url: 'http://checkboxes.jackschuld.com'
+      }
+    ]
+  };
+
   const onlineRecordsProject = {
     title: "Virtual Vinyl (Capstone)",
     description: "A full-stack web application that allows users to manage their record collection digitally including album collection management, wishlist functionality, interactive music playback, and album reviews!",
@@ -190,7 +222,7 @@ const Projects = () => {
     ]
   };
 
-  const projects = [spacePiratesProject, salesSiteProject, aiMarketplaceProject, onlineRecordsProject];
+  const projects = [checkboxesProject, spacePiratesProject, salesSiteProject, aiMarketplaceProject, onlineRecordsProject];
 
   return (
     <section id="projects" className="py-24 bg-white px-6 relative overflow-hidden">
