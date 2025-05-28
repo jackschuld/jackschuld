@@ -222,7 +222,7 @@ const Projects = () => {
     ]
   };
 
-  const projects = [checkboxesProject, spacePiratesProject, salesSiteProject, aiMarketplaceProject, onlineRecordsProject];
+  const projects = [aiMarketplaceProject, checkboxesProject, spacePiratesProject, salesSiteProject, onlineRecordsProject];
 
   return (
     <section id="projects" className="py-24 bg-white px-6 relative overflow-hidden">
