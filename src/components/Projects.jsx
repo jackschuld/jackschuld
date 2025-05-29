@@ -23,8 +23,7 @@ const Projects = () => {
       'Real-time updates via web sockets',
       'Efficient rendering for instant feedback',
       'Global countdown triggering mystery events',
-      'Inspired by onemillioncheckboxes.com',
-      'Fun, addictive, and social gameplay'
+      'Inspired by onemillioncheckboxes.com'
     ],
     repositoryLinks: [
       {
@@ -178,8 +177,8 @@ const Projects = () => {
   };
 
   const spacePiratesProject = {
-    title: "Space Pirates (Game)",
-    description: "A desktop game where you battle pirates in space! Download and play on Windows.",
+    title: "Space Pirates Game",
+    description: "A desktop game where you battle pirates in space! Uses ASCII characters for graphics and a .NET runtime. Download and play on Windows.",
     images: [
       { 
         src: '/spacepirates/launch.png',
